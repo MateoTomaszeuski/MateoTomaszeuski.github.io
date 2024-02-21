@@ -10,7 +10,7 @@ body {
 
 .page {
     display: flex;
-    flex-direction: row;
+    flex-direction:column;
     flex: 1;
     position: relative;
     background-color: #292f3a;
