@@ -4,7 +4,7 @@
     height: 100%;
     width: 100%;
     margin-bottom: 10px;
-    display : flex;
+    display: flex;
 }
 
     .topnav a {
@@ -26,10 +26,7 @@
 .nav-item + .nav-item {
     margin-top: 10px;
 }
-.nav-item {
-    position: sticky;
-    top: 15px;
-}
+
 .bi {
     display: inline-block;
     position: relative;
@@ -52,10 +49,4 @@
     background-clip: border-box;
     border-radius: 2px;
     background-color: darkslategrey;
-}
-#HOME {
-    top: 74px
-}
-#Projects{
-    top: 108px;
 }

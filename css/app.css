@@ -3,6 +3,7 @@ html, body {
 }
 
 body {
+
     margin: 0;
     background-color: #292f3a;
     color: antiquewhite;
@@ -18,5 +19,12 @@ body {
 }
 
 .content {
-    margin-left: 15px;
+    width: 100%;
+    overflow-x: hidden;
+   }
+   
+.sidebar {
+    position: sticky;
+    top: 0px;
+    overflow-x: hidden;
 }

@@ -1,0 +1,456 @@
+
+#BMRCalculatorSelector {
+    grid-column: 1/2;
+    text-align: right;
+    margin-right: 10px;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+#CaloriesCalculatorSelector {
+    grid-column: 2/-1;
+    margin-left: 10px;
+    font-family: sans-serif;
+    font-size: large;
+}
+
+.BMR {
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+}
+
+#UsUnitSelector {
+    border-left: solid black;
+    border-top: solid black;
+    border-right: solid black;
+    width: 125px;
+    height: 80px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-size: large;
+    padding-bottom: 40px;
+    justify-self: right;
+    border-radius: 20px;
+    background-color: #5f7adb;
+    grid-row: 1/2;
+    grid-column: 1/2;
+}
+
+#UsUnitSelector.selected {
+    background-color: #2b4fd4;
+}
+
+#UsUnitSelector:hover {
+    background-color: #a2b2ee;
+}
+
+#MetricSelector {
+    border-left: solid black;
+    border-top: solid black;
+    border-right: solid black;
+    justify-self: left;
+    width: 125px;
+    height: 80px;
+    color: antiquewhite;
+    font-family: sans-serif;
+    font-size: large;
+    padding-bottom: 40px;
+    border-radius: 20px;
+    background-color: #5f7adb;
+    grid-row: 1/2;
+    grid-column: 2/-1;
+}
+
+#MetricSelector.selected {
+    background-color: #2b4fd4;
+}
+
+#MetricSelector:hover {
+    background-color: #a2b2ee;
+}
+
+.client-info {
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    width: 50%;
+    height: 140%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background-color: #5f7adb;
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.gender-input {
+    grid-row: 1/2;
+    display: flex;
+    margin-top: 5px;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+    border-radius: 50%;
+}
+
+.container:hover input~.checkmark {
+    background-color: #ccc;
+}
+
+.container input:checked~.checkmark {
+    background-color: #2196F3;
+}
+
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+.container input:checked~.checkmark:after {
+    display: block;
+}
+
+.container .checkmark:after {
+    top: 9px;
+    left: 9px;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: white;
+}
+
+.US-Units {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.UsWeight {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.MetricWeight {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.UsHeight {
+    margin: 0px;
+    font-size: 20px;
+}
+
+.MetricHeight {
+    margin: 0px;
+    font-size: 20px;
+}
+
+
+[hidden] {
+    display: none !important;
+}
+
+.Metric {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.client-weight {
+    align-self: center;
+    align-items: center;
+    height: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.client-height {
+    align-items: center;
+    height: 50%;
+    justify-content: center;
+    display: flex;
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.client-age {
+    grid-row: 3/4;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+#Age {
+    width: 50%;
+}
+
+.bottom {
+    grid-row: 4/-1;
+    display: grid;
+    height: 90%;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 40px auto auto;
+}
+
+.submit {
+    margin-right: 2px;
+    width: 105px;
+    text-align: center;
+    align-self: baseline;
+    justify-self: center;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 5px;
+    grid-column: 1/2;
+    grid-row: 3/4;
+    border-radius: 10px;
+    background: #a2b2ee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.submit:hover {
+    background: #8a9fe9;
+}
+
+.reset {
+    margin-left: 2px;
+    width: 105px;
+    text-align: center;
+    align-self: baseline;
+    justify-self: center;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 5px;
+    grid-column: 2/-1;
+    grid-row: 3/4;
+    border-radius: 10px;
+    background: #a2b2ee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.reset:hover {
+    background: #8a9fe9;
+}
+
+.response {
+    font-family: sans-serif;
+    font-size: 25px;
+    justify-self: center;
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+
+.Save-Info {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 5px;
+}
+
+.Save-Info input {
+    background-color: #a2b2ee;
+    border-radius: 5px;
+    height: 30px;
+    width: 60%;
+}
+
+.Save-Info label {
+    text-align: center;
+    font-size: large;
+    font-family: sans-serif;
+}
+
+.savebtn {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+    font-family: sans-serif;
+    font-size: large;
+    border-radius: 10px;
+    background: #a2b2ee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.savebtn:hover {
+    background: #8a9fe9;
+}
+
+input[type=number] {
+    background-color: #a2b2ee;
+    border-radius: 5px;
+    height: 30px;
+    width: 40%;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+::placeholder {
+    padding-left: 5px;
+    color: antiquewhite;
+    border-radius: 2px;
+}
+
+.tdee {
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+}
+
+.client-info-tdee {
+    justify-items: center;
+    justify-self: center;
+    align-items: center;
+    width: 50%;
+    height: 110%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background-color: #5f7adb;
+    grid-row: 1/-1;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
+.activity-input {
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.client-BMR {
+    grid-row: 3/4;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 5px;
+    font-size: 20px;
+    font-family: sans-serif;
+}
+
+.SAVED {
+    grid-row: 2/-1;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 15% 85%;
+    justify-content: center;
+}
+
+.client-saved {
+    justify-self: center;
+    text-align: center;
+    width: 50%;
+    height: 200%;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 20px;
+    background-color: #5f7adb;
+    grid-row: 2/-1;
+    grid-column: 1/-1;
+    display: grid;
+    grid-template-rows: auto auto auto;
+}
+
+.UserSaved {
+    grid-column: 1/-1;
+    grid-row: 2/3;
+}
+
+.client-saved p {
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0px;
+}
+.client-saved h1 {
+    grid-row: 1/2;
+    grid-column: 1/-1;
+    font-size: 20px;
+    font-family: sans-serif;
+    margin: 0px;
+}
+
+.bottomSaved {
+    grid-row: 3/-1;
+    height: 40px;
+    display: grid;
+}
+
+.resetsaved {
+    margin-left: 2px;
+    width: 105px;
+    text-align: center;
+    align-self: baseline;
+    justify-self: center;
+    font-family: sans-serif;
+    font-size: large;
+    padding: 5px;
+    grid-column: 1/-1;
+    grid-row: 3/-1;
+    border-radius: 10px;
+    background: #a2b2ee;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+.resetsaved:hover {
+    background: #8a9fe9;
+}
