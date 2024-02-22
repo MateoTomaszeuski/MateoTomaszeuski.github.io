@@ -1,7 +1,7 @@
 {
   "entryAssembly": "MateoTomaszeuski",
   "resources": {
-    "hash": "sha256-wYCjUY8g6ot0KJAZ6XfwcmU81mc9jYxF+4n0H2Uhy88=",
+    "hash": "sha256-UtJq1LL1FxDicqGpZsvqTr4dnSXO72Zgpts6g11b44w=",
     "runtime": {
       "dotnet.7.0.15.qu8f8wl40o.js": "sha256-MHuxwxeVFybuBBTAWeZrvoStZpW+H4ThSaRcFvrfqXM=",
       "dotnet.timezones.blat": "sha256-aHk3Pm2JXopn6UPLJtovAqIdIk8GyIMzGm450cli9UE=",
@@ -11,7 +11,7 @@
       "icudt_no_CJK.dat": "sha256-L7sV7NEYP37/Qr2FPCePo5cJqRgTXRwGHuwF5Q+0Nfs="
     },
     "assembly": {
-      "MateoTomaszeuski.dll": "sha256-yNF01/t74ZQ07teZJkBo5/1mGaeK3bI0qY7VW6T6s/c=",
+      "MateoTomaszeuski.dll": "sha256-+mdDkdxtVrnKUDbpXpsQ37dt+Qps9ywZKOP9ez4yako=",
       "Microsoft.AspNetCore.Components.dll": "sha256-W+jk26Pr4vxvYevaC9QSoxL/lz8J8JscJfKMlmejGrI=",
       "Microsoft.AspNetCore.Components.Web.dll": "sha256-vFyhxmfvFAitJ4JiLPxjagOq6kefT7EtwXu/rb60iy8=",
       "Microsoft.AspNetCore.Components.WebAssembly.dll": "sha256-XYM80863rCSqPKTIFsPNKnli9FGEN6ydRhJq9gbYJAE=",
